@@ -111,6 +111,7 @@ class RetailCrmOrder
                     }
 
                     $order['delivery']['address'][$search] = $prop['VALUE'][0];
+                    $order['delivery']['address']['text'] = $arFields['REASON_CANCELED']; 
                 }
             }
         }
